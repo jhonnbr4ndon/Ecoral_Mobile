@@ -93,7 +93,8 @@
             android:hint="email@ecoral.com"
             android:inputType="textEmailAddress"
             android:padding="12dp"
-            android:background="@drawable/input_background"/>
+            android:background="@drawable/input_background"
+            android:maxLength="50"/>
     </LinearLayout>
 
     <LinearLayout
@@ -117,7 +118,8 @@
             android:hint="********"
             android:inputType="textPassword"
             android:padding="12dp"
-            android:background="@drawable/input_background"/>
+            android:background="@drawable/input_background"
+            android:maxLength="20"/>
     </LinearLayout>
 
 

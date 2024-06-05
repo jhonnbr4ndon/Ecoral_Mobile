@@ -37,6 +37,11 @@ class SignupActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            if (nome.length > 25) {
+                Toast.makeText(this@SignupActivity, "O nome deve ter no máximo 25 caracteres", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             if (!isEmailValid(email)) {
                 Toast.makeText(this@SignupActivity, "Por favor insira um endereço de e-mail válido", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener

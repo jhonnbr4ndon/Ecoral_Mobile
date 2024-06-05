@@ -2,8 +2,9 @@ package br.com.fiap.ecoral.entity
 
 import retrofit2.Call
 import retrofit2.http.Body
-import retrofit2.http.GET
+import retrofit2.http.DELETE
 import retrofit2.http.POST
+import retrofit2.http.PUT
 import retrofit2.http.Path
 
 interface ApiService {
@@ -12,8 +13,13 @@ interface ApiService {
     fun createUser(@Body user: User): Call<Void>
 
     @POST("/usuario/login")
-    fun loginUser(@Body user: User): Call<Void>
+    fun loginUser(@Body credentials: Credentials): Call<User>
 
-    @GET("/usuario/{id}")
-    fun getUserById(@Path("id") userId: Long): Call<User>
+    @PUT("/usuario/{id}")
+    fun atualizarNomeUsuario(@Path("id") id: Long, @Body novoNome: UsuarioDTO): Call<Void>
+
+    @DELETE("/usuario/{id}")
+    fun deletarUsuario(@Path("id") id: Long): Call<Void>
+
 }
+

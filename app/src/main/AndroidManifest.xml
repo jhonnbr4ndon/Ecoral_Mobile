@@ -19,7 +19,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,8 +27,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".SignupActivity" />
+        <activity android:name=".perfil.GerenciarContaActivity"/>
+        <activity android:name=".perfil.AtualizarNomeActivity"/>
+        <activity android:name=".perfil.AtualizarEmailActivity"/>
+        <activity android:name=".perfil.AtualizarSenhaActivity"/>
+        <activity android:name=".perfil.DeletarContaActivity"/>
 
     </application>
 

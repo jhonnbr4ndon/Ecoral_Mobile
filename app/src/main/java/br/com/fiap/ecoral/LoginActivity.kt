@@ -1,12 +1,15 @@
 package br.com.fiap.ecoral
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.fiap.ecoral.databinding.ActivityLoginBinding
 import br.com.fiap.ecoral.entity.ApiClient
 import br.com.fiap.ecoral.entity.ApiService
+import br.com.fiap.ecoral.entity.Credentials
 import br.com.fiap.ecoral.entity.User
 import retrofit2.Call
 import retrofit2.Callback
@@ -42,24 +45,49 @@ class LoginActivity : AppCompatActivity() {
 
             val apiService = ApiClient.retrofit.create(ApiService::class.java)
 
-            val user = User(null,"", email, password)
+//            val user = User(null,"", email, password)
 
-            apiService.loginUser(user).enqueue(object : Callback<Void> {
-                override fun onResponse(call: Call<Void>, response: Response<Void>) {
+            val credentials = Credentials(email, password)
+
+            apiService.loginUser(credentials).enqueue(object : Callback<User> {
+                override fun onResponse(call: Call<User>, response: Response<User>) {
                     if (response.isSuccessful) {
-                        Toast.makeText(this@LoginActivity, "Login bem-sucedido", Toast.LENGTH_SHORT).show()
+                        val user = response.body()
+                        if (user != null) {
+                            // Aqui você pode acessar os dados do usuário
+                            Log.d("LoginActivity", "Login bem-sucedido")
+                            Log.d("LoginActivity", "ID: ${user.id}")
+                            Log.d("LoginActivity", "Nome: ${user.nome}")
+                            Log.d("LoginActivity", "Email: ${user.email}")
+                            Log.d("LoginActivity", "Senha: ${user.senha}")
 
-                        val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                        startActivity(intent)
+                            Toast.makeText(this@LoginActivity, "Login bem-sucedido", Toast.LENGTH_SHORT).show()
+
+                            // Guardando os dados do usuario logado
+                            saveUserData(user)
+
+                            val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                            startActivity(intent)
+                        } else {
+                            // Resposta vazia ou nula
+                            Log.e("LoginActivity", "Resposta vazia ou nula após login")
+                            Toast.makeText(this@LoginActivity, "Resposta vazia ou nula após login", Toast.LENGTH_SHORT).show()
+                        }
                     } else {
-                        Toast.makeText(this@LoginActivity, "Credenciais inválidas", Toast.LENGTH_SHORT).show()
+                        // Resposta não bem-sucedida
+                        Log.e("LoginActivity", "Falha no login: ${response.message()}")
+                        Toast.makeText(this@LoginActivity, "Falha no login: ${response.message()}", Toast.LENGTH_SHORT).show()
                     }
                 }
 
-                override fun onFailure(call: Call<Void>, t: Throwable) {
-                    Toast.makeText(this@LoginActivity, "Falha no login: ${t.message}", Toast.LENGTH_SHORT).show()
+                override fun onFailure(call: Call<User>, t: Throwable) {
+                    // Erro na requisição
+                    Log.e("LoginActivity", "Erro durante a solicitação de login: ${t.message}", t)
+                    Toast.makeText(this@LoginActivity, "Erro durante a solicitação de login: ${t.message}", Toast.LENGTH_SHORT).show()
                 }
             })
+
+
         }
 
         binding.signupText.setOnClickListener {
@@ -67,6 +95,20 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    private fun saveUserData(user: User) {
+        val sharedPreferences = getSharedPreferences("user_data", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+
+        editor.putLong("id", user.id ?: -1L)
+        editor.putString("nome", user.nome)
+        editor.putString("email", user.email)
+        editor.putString("senha", user.senha)
+
+        editor.apply()
+        Log.d("LoginActivity", "Dados do usuário salvos com sucesso: ID=${user.id}, Nome=${user.nome}, Email=${user.email}, Senha=${user.senha}")
+    }
+
 
     private fun isEmailValid(email: String): Boolean {
         val emailRegex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"

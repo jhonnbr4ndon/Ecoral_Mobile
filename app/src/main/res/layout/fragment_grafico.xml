@@ -1,15 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Grafico">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Grafico"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gráfico"
-        android:layout_gravity="center"
-        android:textSize="30dp"/>
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/agora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agora"
+            android:textColor="#00BCD4"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/semana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semana"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Més"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/ano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ano"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp" />
+
+
+</LinearLayout>
