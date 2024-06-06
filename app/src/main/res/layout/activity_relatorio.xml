@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="RelatorioActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:backgroundTint="@color/azul"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/notification_backgroud"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logoecoral"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/relatorio"
+            android:layout_width="320dp"
+            android:layout_height="450dp"
+            android:background="@drawable/input_background_relatorio"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="NOME"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/input_background_relatorio_dados"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="PARCEIRO"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/input_background_relatorio_dados"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="DATA RELATÓRIO"
+                android:inputType="date"
+                android:padding="12dp"
+                android:background="@drawable/input_background_relatorio_dados"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:hint="EQUIPAMENTO"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/input_background_relatorio_dados"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="140dp"
+                android:hint="DESCRIÇÃO DO RELATÓRIO"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/input_background_relatorio_dados" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gerarRelatorio"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="GERAR RELATÓRIO"
+            android:textStyle="bold"
+            android:backgroundTint="@color/blue"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

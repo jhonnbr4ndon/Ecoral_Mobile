@@ -34,6 +34,8 @@
         <activity android:name=".perfil.AtualizarEmailActivity"/>
         <activity android:name=".perfil.AtualizarSenhaActivity"/>
         <activity android:name=".perfil.DeletarContaActivity"/>
+        <activity android:name=".RelatorioActivity"/>
+        <activity android:name=".ParceiroActivity"/>
 
     </application>
 
