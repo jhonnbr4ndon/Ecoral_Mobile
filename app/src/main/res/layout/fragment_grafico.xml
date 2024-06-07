@@ -36,7 +36,7 @@
             android:id="@+id/mes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Més"
+            android:text="Mês"
             android:layout_marginLeft="30dp"
             android:textStyle="bold"
             android:textSize="17dp"/>
