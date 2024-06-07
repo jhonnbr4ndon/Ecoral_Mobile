@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import br.com.fiap.ecoral.databinding.ActivityMainBinding
 import br.com.fiap.ecoral.entity.HttpTestTask
+import br.com.fiap.ecoral.home.Home
 import br.com.fiap.ecoral.perfil.Perfil
 
 class MainActivity : AppCompatActivity() {

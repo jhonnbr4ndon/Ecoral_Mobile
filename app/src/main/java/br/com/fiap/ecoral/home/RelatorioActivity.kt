@@ -1,10 +1,11 @@
-package br.com.fiap.ecoral
+package br.com.fiap.ecoral.home
 
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import br.com.fiap.ecoral.R
 import br.com.fiap.ecoral.databinding.ActivityRelatorioBinding
 
 class RelatorioActivity : AppCompatActivity() {

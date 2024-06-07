@@ -1,17 +1,18 @@
-package br.com.fiap.ecoral
+package br.com.fiap.ecoral.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import br.com.fiap.ecoral.databinding.ActivitySobrenosBinding
+import br.com.fiap.ecoral.R
+import br.com.fiap.ecoral.databinding.ActivityParceiroBinding
 
-class SobreNosActivity : AppCompatActivity() {
+class ParceiroActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivitySobrenosBinding
+    private lateinit var binding: ActivityParceiroBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySobrenosBinding.inflate(layoutInflater)
+        binding = ActivityParceiroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)

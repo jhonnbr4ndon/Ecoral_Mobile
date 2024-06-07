@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create new"
+            android:text="Criar nova"
             android:textSize="28sp"
             android:textStyle="bold"
             />
@@ -41,7 +41,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Account"
+            android:text="Conta"
             android:textSize="28sp"
             android:textStyle="bold"
             />
@@ -57,7 +57,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NAME"
+            android:text="NOME"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="4dp"/>
@@ -106,7 +106,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PASSWORD"
+            android:text="SENHA"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginBottom="4dp"/>
@@ -127,7 +127,7 @@
         android:id="@+id/signupButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Sign up"
+        android:text="cadastre-se"
         android:backgroundTint="@color/azul"
         android:textColor="@color/white"
         android:textSize="18sp"

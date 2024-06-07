@@ -1,4 +1,4 @@
-package br.com.fiap.ecoral
+package br.com.fiap.ecoral.home
 
 import android.content.Context
 import android.content.Intent
@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import br.com.fiap.ecoral.perfil.GerenciarContaActivity
+import br.com.fiap.ecoral.R
 
 class Home : Fragment() {
 

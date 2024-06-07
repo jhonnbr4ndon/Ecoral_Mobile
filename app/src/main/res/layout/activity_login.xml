@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="Conecte-se"
         android:textSize="32sp"
         android:textStyle="bold"
         android:layout_marginTop="100dp"
@@ -42,7 +42,7 @@
         android:id="@+id/loginButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Log in"
+        android:text="Conectar-se"
         android:backgroundTint="@color/azul"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -51,7 +51,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Forgot Password?"
+        android:text="Esqueceu sua senha?"
         android:textColor="@color/gray"
         android:layout_marginBottom="8dp"/>
 
@@ -59,7 +59,7 @@
         android:id="@+id/signupText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Signup !"
+        android:text="Cadastrar-se !"
         android:textColor="@color/gray"/>
 
 </LinearLayout>
