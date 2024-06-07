@@ -1,15 +1,294 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+<LinearLayout
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Explore">
+    tools:context=".Explore"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Explore"
-        android:layout_gravity="center"
-        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="731dp"
+        android:background="@drawable/background_todo"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-</FrameLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Locais de Turismo"
+                    android:textColor="@color/azul_ecoral"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="7dp"
+                    android:src="@drawable/iconintroduction" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Explore locais de turismo para realizar mergulhos e aventuras com nossos parceiros que contribuem com o ecossistema marítimo."
+                        android:textColor="@color/azul_ecoral"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/turismo1"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:src="@drawable/img_turista1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/location_white" />
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mar do Rio - RJ"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Av. Infante Dom Henrique, s/n - Loja 17 A - Glória, \n Rio de Janeiro - RJ, 20021-140 \n Contato: (21) 2225-7508"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="731dp"
+     android:background="@drawable/backgr_verso"
+     android:orientation="vertical"
+     android:gravity="center_horizontal">
+
+
+     <LinearLayout
+         android:layout_width="350dp"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="365dp"
+             android:orientation="vertical">
+
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="270dp"
+                 android:src="@drawable/img_turismo2"/>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="35dp"
+                     android:layout_marginBottom="5dp">
+
+                     <ImageView
+                         android:layout_width="40dp"
+                         android:layout_height="40dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@drawable/location_white" />
+
+                     <LinearLayout
+                         android:layout_width="270dp"
+                         android:layout_height="25dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="8dp"
+                         android:orientation="vertical"
+                         android:gravity="center_vertical">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Alagoas Dive - AL"
+                             android:textColor="@color/white"
+                             android:textSize="20dp"
+                             android:textStyle="bold"/>
+                     </LinearLayout>
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="R. Projetada Sv vinte e trez, S/N - Centro, \n Paripueira - AL, 57935-000 \n Contato: (82)993047471"
+                         android:textColor="@color/white"/>
+                 </LinearLayout>
+
+             </LinearLayout>
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="365dp"
+             android:orientation="vertical"
+             android:layout_marginTop="5dp">
+
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="270dp"
+                 android:src="@drawable/img_turismo3"/>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="35dp"
+                     android:layout_marginBottom="5dp">
+
+                     <ImageView
+                         android:layout_width="40dp"
+                         android:layout_height="40dp"
+                         android:layout_marginTop="2dp"
+                         android:src="@drawable/iconlocation" />
+
+                     <LinearLayout
+                         android:layout_width="270dp"
+                         android:layout_height="25dp"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="8dp"
+                         android:orientation="vertical"
+                         android:gravity="center_vertical">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Piscina do Amor - AL"
+                             android:textColor="@color/azul_ecoral"
+                             android:textSize="20dp"
+                             android:textStyle="bold"/>
+                     </LinearLayout>
+                 </LinearLayout>
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Piscina Natural - Pajuçara, Meceió - AL, \n 57030-000 \n Contato: (82)988399133"
+                         android:textColor="@color/azul_ecoral"/>
+                 </LinearLayout>
+
+             </LinearLayout>
+
+
+         </LinearLayout>
+
+
+     </LinearLayout>
+ </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

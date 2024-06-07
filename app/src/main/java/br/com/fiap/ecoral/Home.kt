@@ -22,6 +22,8 @@ class Home : Fragment() {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         val relatorioLayout = view.findViewById<LinearLayout>(R.id.relatorio)
         val parceiroLayout = view.findViewById<LinearLayout>(R.id.parceiro)
+        val sobrenosLayout = view.findViewById<LinearLayout>(R.id.sobre)
+
         nomeUsuarioTextView = view.findViewById(R.id.nomeUsuario)
 
         relatorioLayout.setOnClickListener {
@@ -31,6 +33,11 @@ class Home : Fragment() {
 
         parceiroLayout.setOnClickListener {
             val intent = Intent(activity, ParceiroActivity::class.java)
+            startActivity(intent)
+        }
+
+        sobrenosLayout.setOnClickListener {
+            val intent = Intent(activity, SobreNosActivity::class.java)
             startActivity(intent)
         }
 

@@ -45,12 +45,12 @@ class Grafico : Fragment() {
         xAxis.setDrawAxisLine(false) // Desabilitar a linha do eixo
         xAxis.valueFormatter = IndexAxisValueFormatter(
             mutableListOf(
-                "metais",
-                "plástico",
-                "salinidade",
-                "temperatura",
-                "turbidez",
-                "pH"
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
             )
         )
 

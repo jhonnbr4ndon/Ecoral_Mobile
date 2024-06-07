@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SobreNosActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:backgroundTint="@color/azul"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="668dp"
+        android:background="@drawable/background_todo"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sobre Nós"
+                    android:textStyle="bold"
+                    android:textColor="@color/azul_ecoral"
+                    android:textSize="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Somos a Ecoral e nosso objetivo é promover e conscientização marinha através da tecnologia."
+                    android:textSize="18dp"
+                    android:textColor="@color/azul_ecoral"
+                    android:layout_marginTop="30dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:src="@drawable/img_sobre1"
+                        android:layout_marginTop="50dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:src="@drawable/img_sobre2"
+                        android:layout_marginTop="50dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/logoecoral"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O problema"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="28dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O turismo, especialmente o de mergulho, muita vezes ignora o impacto ambiental e a importância da conservação do ecossistema marinho. A falta de informação e a ausência de dados acessíveis sobre o estado mar limita a participação consciente dos turistas na preservação do ambiente."
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_marginTop="15dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="668dp"
+        android:background="@drawable/backgr_verso"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:text="SOLUÇÃO"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nosso aplicativo conecta turistas a informações essenciais sobre o estado do mar. Ele fornece dados sobre temperatura, poluição, fauna, flora e locais seguros para mergulho."
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Essas informações são coletadas por equipamentos de monitoramento de ONGs parceiras, que acompanham a saúde do ecossistema marinho e compartilham os dados com a comunidade de turistas."
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A manutenção dos equipamentos é realizada pela empresa de turismo parceira, que também usa as expedições para conscientizar os turistas sobre a importância da preservação do ecossistema marinho."
+                android:textColor="@color/azul_ecoral"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="668dp"
+        android:background="@drawable/background_todo"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@color/azul_ecoral"
+                android:text="BENEFÍCIOS"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:textColor="@color/azul_ecoral"
+                android:text="• Maior conscientização: Os turistas estarão mais conscientes do impacto de suas ações no ecossistema marinho."
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:textColor="@color/azul_ecoral"
+                android:text="• Turismo mais responsável: O aplicativo incentiva práticas de turismo sustentável e preservação do ambiente."
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:textColor="@color/white"
+                android:text="• Melhoria na gestão do ecossistema: Os dados coletados pelo aplicativo auxiliam as ONGs na gestão e monitoramento da saúde do ecossistema marinho."
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:textColor="@color/white"
+                android:text="• Fortalecimento da comunidade: O aplicativo cria uma rede colaborativa entre turistas, empresas de turismo e ONGs."
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

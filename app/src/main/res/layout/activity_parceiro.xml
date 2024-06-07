@@ -1,165 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ParceiroActivity"
-    android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:backgroundTint="@color/azul"/>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_todo"
-        android:gravity="center_horizontal"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ParceiroActivity"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Nossos Parceiros"
-                android:textColor="@color/azul_ecoral"
-                android:textSize="25dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="109dp"
-                android:layout_marginTop="13dp"
-                android:src="@drawable/icon_parceiro" />
-
-        </LinearLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:backgroundTint="@color/azul"/>
 
         <LinearLayout
-            android:layout_width="350dp"
-            android:layout_height="570dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="660dp"
+            android:background="@drawable/background_todo"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="280dp"
-                android:src="@drawable/image_parceiro1" />
-
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginBottom="5dp">
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Nossos Parceiros"
+                    android:textColor="@color/azul_ecoral"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/iconlocation" />
-
-                <LinearLayout
-                    android:layout_width="270dp"
-                    android:layout_height="45dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Agência Milagres Mergulho"
-                        android:textColor="@color/azul_ecoral"
-                        android:textSize="17dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="São Miguel dos Milagres - AL"
-                        android:textColor="@color/azul_ecoral"
-                        android:textSize="17dp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
+                    android:layout_marginLeft="109dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/icon_parceiro" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="350dp"
+                android:layout_height="580dp"
+                android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:src="@drawable/image_parceiro1" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="A Milagres Mergulho é uma"
-                    android:textColor="@color/azul_ecoral"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="empresa dedicada a"
-                    android:textColor="@color/azul_ecoral"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/location_white" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="proporcionar experiências"
-                    android:textColor="@color/azul_ecoral"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="270dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="inesquecíveis de mergulho,"
-                    android:textColor="@color/azul_ecoral"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Agência Milagres Mergulho\nSão Miguel dos Milagres - AL"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="explorando as maravilhas"
-                    android:textColor="@color/azul_ecoral"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="subaquáticas de forma"
-                    android:textColor="@color/azul_ecoral"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="segura e sustentável"
-                    android:textColor="@color/azul_ecoral"
-                    android:textSize="25dp"
-                    android:textStyle="bold" />
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A Milagres Mergulho é uma empresa dedicada a proporcionar experiências inesquecíveis de mergulho, explorando as maravilhas subaquáticas de forma segura e sustentável."
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="670dp"
+            android:background="@drawable/backgr_verso"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:src="@drawable/image_parceiro2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/iconlocation" />
+
+                    <LinearLayout
+                        android:layout_width="270dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ONG NGO - Sede Alagoas\nSão Miguel dos Milagres - AL"
+                            android:textColor="@color/azul_ecoral"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A NGO Mar Azul é uma organização não-governamental dedicada à preservação e recuperação explorando as maravilhas dos ecossistemas marinhos, que fornece os equipamentos necessários para os dados cujo fornecemos para os turistas e para estudos."
+                        android:textColor="@color/azul_ecoral"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

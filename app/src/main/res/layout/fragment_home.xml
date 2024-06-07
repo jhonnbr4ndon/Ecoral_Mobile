@@ -153,6 +153,7 @@
 
 
             <LinearLayout
+                android:id="@+id/sobre"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:background="@drawable/notification_backgroud"

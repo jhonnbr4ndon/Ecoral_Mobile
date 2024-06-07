@@ -36,6 +36,7 @@
         <activity android:name=".perfil.DeletarContaActivity"/>
         <activity android:name=".RelatorioActivity"/>
         <activity android:name=".ParceiroActivity"/>
+        <activity android:name=".SobreNosActivity"/>
 
     </application>
 
